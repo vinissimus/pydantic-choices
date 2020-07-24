@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pydantic-choices"
+version = "0.1.0"
+description = ""
+authors = ["Jordi Masip <jordi@masip.cat>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pydantic = "^1.6.1"
+pytest = "^5.4.3"
+
+[tool.isort]
+force_single_line = "True"
+sections = ["THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER", "STDLIB"]
+no_lines_before = ["LOCALFOLDER", "THIRDPARTY", "FIRSTPARTY", "STDLIB"]
+force_alphabetical_sort = "True"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
