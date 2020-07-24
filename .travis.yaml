@@ -1,0 +1,18 @@
+dist: bionic
+language: python
+python:
+  - "3.6"
+  - "3.7"
+  - "3.8"
+before_install:
+  - pip install poetry
+  - pip install codecov
+install:
+  - poetry install
+script:
+  - isort -c pydantic_choices
+  - black --check pydantic_choices
+  - flake8 pydantic_choices
+  - pytest --cov=pydantic_choices -v --cov-report term-missing pydantic_choices
+after_success:
+  - codecov
