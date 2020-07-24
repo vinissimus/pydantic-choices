@@ -1,9 +1,12 @@
 [tool.poetry]
 name = "pydantic-choices"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Jordi Masip <jordi@masip.cat>"]
 license = "MIT"
+homepage = "https://github.com/vinissimus/pydantic-choices"
+repository = "https://github.com/vinissimus/pydantic-choices"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.6"
