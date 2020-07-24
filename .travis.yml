@@ -13,6 +13,6 @@ script:
   - isort -c pydantic_choices
   - black --check pydantic_choices
   - flake8 pydantic_choices
-  - pytest --cov=pydantic_choices -v --cov-report term-missing pydantic_choices
+  - pytest --cov=pydantic_choices -v --cov-report term-missing tests
 after_success:
   - codecov
